@@ -1,0 +1,723 @@
+/* =========================
+   CONFIGURAÇÕES GERAIS
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+body {
+
+    background-color: #000;
+
+    color: white;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    padding-top: 80px;
+
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #151515;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+    /* ADICIONE ESTES ITENS ABAIXO PARA DEIXÁ-LO FIXO: */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999; /* Garante que o cabeçalho fique acima de tudo na página */
+}
+
+/* LOGO */
+
+.header-logo {
+
+    width: 55px;
+
+    height: 55px;
+
+    background-color: #2d2c2c;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+    margin-right: 10px;
+
+}
+
+
+/* MENU */
+
+nav {
+
+    display: flex;
+
+    align-items: center;
+
+}
+
+
+.link-header {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.link-header:hover {
+
+    color: #f5c400;
+
+}
+
+
+/* BOTÃO LOGIN */
+
+.button-header {
+
+    margin-left: 20px;
+
+    padding: 10px 25px;
+
+    border: 1px solid #f5c400;
+
+    border-radius: 25px;
+
+    background-color: transparent;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.button-header:hover {
+
+    background-color: #f5c400;
+
+    color: black;
+
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.intro {
+
+    width: 900px;
+
+    margin: 70px auto 30px;
+
+}
+
+
+.intro h2 {
+
+    font-size: 32px;
+
+    color: white;
+
+}
+
+
+/* =========================
+   CONTEÚDO PRINCIPAL
+========================= */
+
+main {
+    width: 900px;
+
+    margin: 0 auto;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 50px;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.info-leall {
+
+    width: 560px;
+
+}
+
+
+.info-leall h1 {
+
+    font-size: 48px;
+
+    margin-bottom: 5px;
+
+}
+
+
+.info-leall h2 {
+
+    color: #f5c400;
+
+    font-size: 22px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.info-leall p {
+
+    color: #e5e5e5;
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+}
+
+
+.info-leall strong {
+
+    color: #f5c400;
+
+}
+
+
+.info-leall b {
+
+    color: white;
+
+}
+
+
+/* =========================
+   IMAGEM DO LEALL
+========================= */
+
+.imagem-container {
+    width: 220px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-leall {
+    width: 340px;
+    height: auto;
+
+    object-fit: contain;
+}
+
+
+
+/* =========================
+   LINHA AMARELA
+========================= */
+
+.linha-amarela {
+
+    width: 700px;
+
+    height: 2px;
+
+    background-color: #f5c400;
+
+    margin: 70px auto;
+
+}
+
+
+/* =========================
+   REDES SOCIAIS
+========================= */
+
+.redes-sociais {
+
+    width: 850px;
+
+    margin: 0 auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 35px;
+
+}
+
+
+.redes-sociais a {
+
+    height: 70px;
+
+    background-color: #151515;
+
+    border-radius: 8px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+
+.redes-sociais a:hover {
+
+    background-color: #f5c400;
+
+    color: #000;
+
+}
+
+
+/* =========================
+   SEÇÃO DE ÁLBUNS
+========================= */
+
+.albuns-section {
+
+    width: 900px;
+
+    margin: 100px auto 0;
+
+    padding-bottom: 100px;
+
+}
+
+
+/* TÍTULO */
+
+.titulo-albuns {
+
+    color: white;
+
+    font-size: 32px;
+
+    margin-bottom: 15px;
+
+}
+
+
+/* LINHA AMARELA DA SEÇÃO */
+
+.linha-amarela-albuns {
+
+    width: 100%;
+
+    height: 2px;
+
+    background-color: #f5c400;
+
+    margin-bottom: 40px;
+
+}
+
+
+/* =========================
+   CONTAINER DOS ÁLBUNS
+========================= */
+
+.albuns-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    margin-top: 80px;
+
+}
+
+
+/* =========================
+   CARD
+========================= */
+
+.album-card {
+
+    background-color: #151515;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    border: 1px solid #222;
+
+    transition: 0.3s;
+
+}
+
+
+.album-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: #f5c400;
+
+}
+
+
+/* =========================
+   CAPA DO ÁLBUM
+========================= */
+
+.capa-album {
+
+    width: 100%;
+
+    height: 300px;
+
+    object-fit: cover;
+
+    display: block;
+
+}
+
+
+/* =========================
+   INFORMAÇÕES
+========================= */
+
+.album-info {
+
+    padding: 20px;
+
+}
+
+
+/* NOME */
+
+.album-info h3 {
+
+    color: white;
+
+    font-size: 21px;
+
+    margin-bottom: 8px;
+
+}
+
+
+/* TIPO E ANO */
+
+.album-info span {
+
+    color: #f5c400;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+}
+
+
+/* TEXTO */
+
+.album-info p {
+
+    color: #d5d5d5;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-top: 18px;
+
+    min-height: 100px;
+
+}
+
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 950px) {
+
+    .intro,
+    main,
+    .albuns-section {
+
+        width: 90%;
+
+    }
+
+
+    .redes-sociais {
+
+        width: 90%;
+
+    }
+
+
+    main {
+
+        flex-direction: column;
+
+    }
+
+
+    .info-leall {
+
+        width: 100%;
+
+    }
+
+
+    .imagem-container {
+
+        margin-top: 30px;
+
+    }
+
+
+    .albuns-container {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    header {
+
+        height: auto;
+
+        padding: 15px;
+
+        flex-wrap: wrap;
+
+    }
+
+
+    nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .link-header {
+
+        font-size: 15px;
+
+        padding: 8px;
+
+    }
+
+
+    .intro h2 {
+
+        font-size: 25px;
+
+    }
+
+
+    .info-leall h1 {
+
+        font-size: 38px;
+
+    }
+
+
+    .image-leall {
+
+        width: 220px;
+
+        height: 220px;
+
+    }
+
+
+    .redes-sociais {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .linha-amarela {
+
+        width: 80%;
+
+    }
+
+}
+
+/* Seção Escupido a Machado */
+.secao-machado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  max-width: 950px;
+  width: 92%;
+  margin: 60px auto;
+  margin-top: 80px;
+}
+
+.conteudo-machado {
+  flex: 1;
+}
+
+.titulo-machado {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 12px;
+  margin-bottom: 40px;
+}
+
+.texto-machado {
+  font-size: 17px;
+  line-height: 1.5;
+  color: white;
+}
+
+.imagem-machado {
+  width: 280px; /* Tamanho da foto no computador */
+  flex-shrink: 0;
+}
+
+.imagem-historia img,
+.imagem-machado img {
+  width: 100%;
+  height: 280px; /* <--- Defina a mesma altura que a largura da div! */
+  object-fit: cover; /* <--- Isso evita que a foto fique esmagada */
+  border-radius: 50%;
+  border: 2px solid #f5b900;
+  display: block;
+}
+/* Responsividade para Celular (Igual à seção de história) */
+@media (max-width: 768px) {
+  .secao-machado {
+    flex-direction: column-reverse; /* No celular a foto vai para cima e o texto para baixo, ou mude para 'column' se preferir a foto embaixo */
+    text-align: center;
+    gap: 25px;
+  }
+
+  .imagem-machado {
+    width: 200px; /* Tamanho adaptado para telas menores */
+  }
+}
+
+/* Rodapé / Créditos */
+/* Container geral do rodapé para organizar o aviso e os créditos */
+.creditos-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 40px;
+  border-top: 1px solid rgba(245, 185, 0, 0.2); /* Uma linha sutil separando o conteúdo */
+}
+
+/* Estilo do aviso de site de estudo */
+.aviso-nao-oficial {
+  color: #888888; /* Tom cinza discreto para não brigar com o design do site */
+  font-size: 13px;
+  font-family: sans-serif;
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+/* Estilo original dos créditos mantido */
+.creditos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  font-size: 14px;
+}
+
+.saturno-icon {
+  background-color: #4a4a4a;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.desenvolvedor {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.link-github {
+  color: #e5b800;
+  text-decoration: none;
+  font-weight: bold;
+  transition: opacity 0.2s;
+}
+
+.link-github:hover {
+  text-decoration: underline;
+  opacity: 0.8;
+}
