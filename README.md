@@ -50,7 +50,7 @@ O layout se adapta a telas menores com `@media` queries (breakpoints em 950px, 7
 
 1. Clone o repositório:
    ```bash
-   git clone https://github.com/Theoribiro/NOME-DO-REPOSITORIO.git
+   git clone https://github.com/Theoribiro/pagina-leall.git
    ```
 2. Abra a pasta do projeto.
 3. Abra o arquivo `index.html` no navegador (ou use a extensão Live Server do VS Code).
