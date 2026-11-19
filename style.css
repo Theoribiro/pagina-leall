@@ -119,11 +119,13 @@ nav {
 
     color: white;
 
-    font-size: 16px;
+    font-size: 19px;
 
     cursor: pointer;
 
     transition: 0.3s;
+
+    text-decoration: none;
 
 }
 
@@ -314,6 +316,8 @@ main {
     cursor: pointer;
 
     transition: 0.3s;
+
+    text-decoration: none;
 
 }
 
